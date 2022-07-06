@@ -13,6 +13,6 @@
 在命令行中输入：
 
 ```bash
-cd 任务5 && python main.py
+cd task5/ && python main.py --k 4
 ```
 
