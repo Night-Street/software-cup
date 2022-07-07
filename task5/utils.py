@@ -3,7 +3,7 @@ import random
 
 import numpy as np
 import pandas as pd
-import torch
+# import torch
 from sklearn.preprocessing import LabelEncoder
 
 
@@ -13,13 +13,13 @@ def setup_seed(seed=0):
     # Numpy
     np.random.seed(seed)
     # Torch
-    from torch.backends import cudnn
-    torch.manual_seed(seed)
-    if torch.cuda.is_available():
-        torch.cuda.manual_seed(seed)
-        torch.cuda.manual_seed_all(seed)
-    cudnn.benchmark = False
-    cudnn.deterministic = True
+    # from torch.backends import cudnn
+    # torch.manual_seed(seed)
+    # if torch.cuda.is_available():
+    #     torch.cuda.manual_seed(seed)
+    #     torch.cuda.manual_seed_all(seed)
+    # cudnn.benchmark = False
+    # cudnn.deterministic = True
 
 
 def calc_rfm(df: pd.DataFrame):

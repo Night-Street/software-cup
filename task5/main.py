@@ -1,12 +1,10 @@
 from argparse import ArgumentParser
-
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
-from sklearn.cluster import k_means, kmeans_plusplus, dbscan
-from sklearn.preprocessing import LabelEncoder
+from sklearn.cluster import k_means
 
-from utils import calc_rfm, process_csv, setup_seed
+from utils import process_csv, setup_seed
 
 
 def check_n_clusters(n_clusters: int):
